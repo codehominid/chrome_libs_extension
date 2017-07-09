@@ -27,7 +27,6 @@ function replaceText(v){
       var keys = Object.keys(obj.findReplaceText)
 
       for(var i = 0; i <= keys.length - 1; i++){
-        console.log(keys[i])
         var reFind = new RegExp(keys[i], 'g')
         var reReplace = obj.findReplaceText[keys[i]]
         v = v.replace(reFind, reReplace)
